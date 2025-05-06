@@ -1,0 +1,27 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Net.NetworkInformation;
+
+public partial class presentacion_administrador : System.Web.UI.Page
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        Response.Cache.SetNoStore();
+        if (Session["id_usuario"] != null)
+        {
+            if (int.Parse(Session["rol"].ToString()) != 1)
+            {
+                Response.Redirect("login.aspx");
+            }
+        }
+        else
+            Response.Redirect("login.aspx");
+     
+    }
+    
+}
+    

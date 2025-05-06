@@ -1,0 +1,127 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="~/logica/MasterPage.master.cs" Inherits="presentacion_MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>BIBLIOTECA</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <link rel="stylesheet" href="../Styles/Site.css" type="text/css" />
+</head>
+<body id="top">
+<div class="wrapper col1">
+  <div id="header">
+    <div id="logo">
+      <h1>
+          <asp:Label ID="Label1" runat="server" Text="Label"><a href="#">BIBLIOTECA ALENJANDRIA</a></asp:Label></h1>
+      
+    </div>
+    <div id="info">
+      <ul>
+        <li></li>
+        <li> TEL: 314 3914382 </li>
+        <li>Mail: alenyi2@hotmail.com</li>
+      </ul>
+    </div>
+    <br class="clear" />
+  </div>
+</div>
+
+<!-- ####################################################################################################### -->
+<div class="wrapper col2">
+  <div id="topbar">
+   
+    <div id="search">
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Site Search</legend>
+          <input type="text" value="Search Our Website&hellip;"  onfocus="this.value=(this.value=='Search Our Website&hellip;')? '' : this.value ;" />
+          <input type="submit" name="go" id="go" value="Search" />
+        </fieldset>
+      </form>
+    </div>
+    <br class="clear" />
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col3">
+  <div id="intro">
+    <div class="fl_left"><a href="#"><img src="../Styles/imagenes/biblio.jpg" alt="" /></a></div>
+    <div class="fl_right">
+      <h2>About This Free CSS Template</h2>
+      <p>This is a W3C standards compliant free website template from <a href="http://www.os-templates.com/">OS Templates</a>.</p>
+      <p>This template is distributed using a <a href="http://www.os-templates.com/template-terms">Website Template Licence</a>, which allows you to use and modify the template for both personal and commercial use when you keep the provided credit links in the footer.</p>
+      <p>For more CSS templates visit <a href="http://www.os-templates.com/">Free Website Templates</a>.</p>
+      <ul>
+        <li><a href="#">Link Text</a></li>
+        <li><a href="#">Link Text</a></li>
+        <li class="last"><a href="#">Link Text</a></li>
+      </ul>
+    </div>
+    <br class="clear" />
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col4">
+  <div id="container">
+   <!-- ############################################# encapsulado ########################################################## -->
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+<!-- ####################################################################################################### -->
+  </div>
+</div>
+
+<div class="wrapper col5">
+  <div id="footer">
+    <div class="footbox">
+      <h2>Stay In The Know !</h2>
+      <p>Please enter your email to join our mailing list</p>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>News Letter</legend>
+          <input type="text" value="Enter Email Here&hellip;"  onfocus="this.value=(this.value=='Enter Email Here&hellip;')? '' : this.value ;" />
+          <input type="submit" name="news_go" id="news_go" value="GO" />
+        </fieldset>
+      </form>
+      <p>To unsubscribe please <a href="#">click here &raquo;</a></p>
+    </div>
+    <div class="footbox">
+      <h2>Indonectetus facilis leo nibh</h2>
+      <ul>
+        <li><a href="#">&raquo; Lorem ipsum dolor sit amet, conse</a></li>
+        <li><a href="#">&raquo; Phasellus tempor vestibulum odio</a></li>
+        <li><a href="#">&raquo; Vestibulum quis augue id mauris</a></li>
+        <li class="last"><a href="#">&raquo; Duis egestas elit at erat imperdiet</a></li>
+      </ul>
+    </div>
+    <div class="footbox last">
+      <h2>Indonectetus facilis leo nibh</h2>
+      <address>
+      Company Name<br />
+      Street Name &amp; Number<br />
+      Town<br />
+      Postcode/Zip<br />
+      </address>
+      Tel: xxxxx xxxxxxxxxx 
+      <!-- --> 
+    </div>
+    <br class="clear" />
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col6">
+  <div id="copyright">
+    <p class="fl_left">Copyright &copy; 2014 - All Rights Reserved - <a href="#">Domain Name</a></p>
+    <p class="fl_right">Template by <a target="_blank" href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+    <br class="clear" />
+  </div>
+</div>
+</body>
+</html>
